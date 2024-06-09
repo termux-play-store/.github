@@ -26,7 +26,7 @@ This split is a temporary one as things stabilises and details are worked out.
 Most users who can install from [F-Droid](https://f-droid.org), should [install Termux from F-Droid](https://f-droid.org/en/packages/com.termux/) for now until the Termux build on Google Play has been stabilised more. Google Play will for now consider the Google Play build to be newer and prompt to update - this will be resolved by a Termux F-Droid update shortly, until then ignore the update prompt and/or disable automatic updates for the Google Play Termux app.
 
 If you as a user want to help out testing or experimenting with the [Termux build on Google Play](https://play.google.com/store/apps/details?id=com.termux):
-- Things can be rough - be ready for some issues and missing functionality.
+- Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
   - Check out [Updates](#updates) below for updates.
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
 - The X11 graphical system packages are not yet available, nor root functionality.
