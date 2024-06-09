@@ -4,7 +4,7 @@ This page contains information about the [Termux build on Google Play](https://p
 ## Background
 Android apps specify a [targetSdkVersion](https://developer.android.com/guide/topics/manifest/uses-sdk-element#target) property, to indicate which version of Android they are compatible with. This is for backward compatibility, as if the `targetSdkVersion` of an app specifies "Android 11", then the Android system will effectively act as if the system is running that version, allowing old behaviour, even if the system is actually running a newer Android version such as Android 14.
 
-Almost every Android version imposes new restrictions when it comes to security requirements, and specifically the Android 10 version update was dramatic for Termux usage, as it disallowed executing downloaded files directly.
+Almost every Android version imposes new major restrictions when it comes to security requirements, and specifically the Android 10 version update was dramatic for Termux usage, as it disallowed executing downloaded files directly.
 
 The Termux app avoided that by using a `targetSdkVersion` of Android 9, declaring that it was not compatible with the Android 10 requirements. This meant that, due to [Google Play's API level requirements](https://developer.android.com/google/play/requirements/target-sdk), Termux was not able to be updated on Google Play starting in 2020, and new devices were not allowed to install Termux from Google Play.
 
