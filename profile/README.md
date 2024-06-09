@@ -31,7 +31,7 @@ If you as a user want to help out testing or experimenting with the [Termux buil
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
 - The X11 graphical system packages are not yet available, nor root functionality.
 - [proot](https://wiki.termux.com/wiki/PRoot) does not yet work.
-- External store is not yet accessible.
+- External storage is not yet accessible.
 - The `Termux:Api`, `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
 - Are you finding something that is worth pointing out here? [Create an issue about it](https://github.com/termux-play-store/termux-issues/issues/new/choose)
