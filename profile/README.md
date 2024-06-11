@@ -44,8 +44,10 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
-- `2024-06-XX` (shortly): Version `0.123` of Termux on Google Play will be released, fixing a crash on `termux-setup-storage`.
 - `2024-06-XX` (shortly): The F-Droid build will be updated with a version code bump, so Google Play will not consider its version of Termux to be newer than the F-Droid one, and avoid prompting for updating away from F-Droid.
+- `2024-06-12`: Version `0.125` of Termux on Google Play was released, setting up access to shared storage with `termux-setup-storage`.
+- `2024-06-11`: Version `0.124` of Termux on Google Play was released, fixing problems with updating styles.
+- `2024-06-10`: Version `0.123` of Termux on Google Play was released, fixing a crash on `termux-setup-storage`.
 - `2024-06-09`: Version `0.122` of Termux on Google Play was released, fixing some crashes and instabilities, as well as bringing full-screen support.
 - `2024-06-07`: Version `0.120` of Termux on Google Play was released, the initial version being back on the Google Play.
 
