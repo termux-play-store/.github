@@ -16,7 +16,7 @@ Recently, at 2024-06-07, Termux was updated on Google Play with changes to bump 
 - Changes to work with less permissions, as the initial Google Play review did not approve the usage of multiple permissions.
   - Some of these might be possible to add back in the future, if Google Play reviwers can be convinced that they are important enough for app functionality.
 
-As the main Termux app and packages is not yet compatible with the updated requirements - and before passing Google Play review it wasn't clear exactly which changes was necessary - it was done from a different code base containing changes compared to the F-Droid build:
+As the F-Droid build of the Termux app and packages is not yet compatible with the updated requirements - and before passing Google Play review it wasn't clear exactly which changes was necessary - it was done from a different code base containing changes compared to the F-Droid build:
 - https://github.com/termux is the source code used in the F-Droid build of Termux.
 - https://github.com/termux-play-store is the source code for the Google Play build of Termux.
 
@@ -50,4 +50,3 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - `2024-06-10`: Version `0.123` of Termux on Google Play is awaiting approval from Google, This version fixes a crash on `termux-setup-storage`.
 - `2024-06-09`: Version `0.122` of Termux on Google Play was released, fixing some crashes and instabilities, as well as bringing full-screen support.
 - `2024-06-07`: Version `0.120` of Termux on Google Play was released, the initial version being back on the Google Play.
-
