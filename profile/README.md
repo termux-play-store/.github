@@ -14,7 +14,7 @@ Recently, at 2024-06-07, Termux was updated on Google Play with changes to bump 
 - Changes to work with the updated `targetSdkVersion` required by Google Play.
 - Changes to work without the [sharedUserId](https://developer.android.com/guide/topics/manifest/manifest-element#uid) manifest entry, which was not allowed by the Google Play review.
 - Changes to work with less permissions, as the initial Google Play review did not approve the usage of multiple permissions.
-  - Some of these might be possible to add back in the future, if Google Play reviwers can be convinced that they are important enough for app functionality.
+  - Some of these (but not all) might be possible to add back in the future, if Google Play reviwers can be convinced that they are important enough for app functionality.
 
 As the F-Droid build of the Termux app and packages is not yet compatible with the updated requirements - and before passing Google Play review it wasn't clear exactly which changes was necessary - it was done from a different code base containing changes compared to the F-Droid build:
 - https://github.com/termux is the source code used in the F-Droid build of Termux.
@@ -29,8 +29,8 @@ If you as a user want to help out testing or experimenting with the [Termux buil
 - Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
   - Check out [Updates](#updates) below for updates.
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
-- The X11 graphical system packages are not yet available, nor root functionality.
-- [proot](https://wiki.termux.com/wiki/PRoot) does not yet work.
+- [proot](https://wiki.termux.com/wiki/PRoot) does not yet work (will start working with the `0.126` app update).
+- The X11 graphical system packages are not yet available (but X11 should work with prooted Linux distributions starting with the `0.126` app update), nor root functionality.
 - The `Termux:Api`, `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
 - External, non-Termux app can not yet run Termux commands (the `RUN_COMMAND` permission).
