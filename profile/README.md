@@ -27,7 +27,7 @@ Most users who can install from [F-Droid](https://f-droid.org), should [install 
 
 If you as a user want to help out testing or experimenting with the [Termux build on Google Play](https://play.google.com/store/apps/details?id=com.termux):
 - Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
-  - Check out [Updates](#updates) below for updates.
+  - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
 - [proot](https://wiki.termux.com/wiki/PRoot) does not yet work (will start working with the `0.126` app update).
 - The X11 graphical system packages are not yet available (but X11 should work with prooted Linux distributions starting with the `0.126` app update), nor root functionality.
