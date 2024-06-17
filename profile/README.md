@@ -29,8 +29,7 @@ If you as a user want to help out testing or experimenting with the [Termux buil
 - Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
   - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
-- [proot](https://wiki.termux.com/wiki/PRoot) does not yet work (will start working with the `0.126` app update).
-- The X11 graphical system packages are not yet available (but X11 should work with prooted Linux distributions starting with the `0.126` app update), nor root functionality.
+- The X11 graphical system packages (`x11-packages`) are not yet available (but X11 should work with prooted Linux distributions).
 - The `Termux:Api`, `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
 - External, non-Termux app can not yet run Termux commands (the `RUN_COMMAND` permission).
