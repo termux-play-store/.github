@@ -43,6 +43,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 
 ## Updates
 - `2024-06-XX` (shortly): The F-Droid build will be updated with a version code bump, so Google Play will not consider its version of Termux to be newer than the F-Droid one, and avoid prompting for updating away from F-Droid.
+- `2024-06-18`: Root packages (`pkg install root-repo`) were added back.
 - `2024-06-16`: Version `0.127` of Termux on Google Play was released. This version adds back the Termux session notification on Android 13+ devices.
 - `2024-06-14`: Version `0.126` of Termux on Google Play was released. This version fixes `proot` usage.
 - `2024-06-12`: Version `0.125` of Termux on Google Play was released. This version fixes setting up access to shared storage with `termux-setup-storage`.
