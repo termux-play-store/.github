@@ -42,11 +42,11 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
-- `2024-06-XX` (shortly): The F-Droid build will be updated with a version code bump, so Google Play will not consider its version of Termux to be newer than the F-Droid one, and avoid prompting for updating away from F-Droid.
 - `2024-06-23`: Version `0.129` of Termux on Google Play was released. This version fixes GPG errors on certain devices, causing incorrect messages about "the repository .. is not signed, as well as KernelSU compatibility and configuring the extra keyboard keys using `termux.properties`.
   - If you are seeing the `the repository .. is not signed` error message from an old installation, either uninstall and install again or run `apt --allow-insecure-repositories update` and `apt upgrade` once.
 - `2024-06-23`: Version `0.128` of Termux on Google Play was released. This version grants read/write access to shared storage using the `MANAGE_EXTERNAL_STORAGE` permission.
   - Run `termux-setup-storage` to get this read/write access.
+- `2024-06-22`: The F-Droid build was updated with a version code bump, so Google Play will not consider its version of Termux to be newer than the F-Droid one, and will stop prompting for updating away from F-Droid.
 - `2024-06-18`: Root packages (`pkg install root-repo`) were added back.
 - `2024-06-16`: Version `0.127` of Termux on Google Play was released. This version adds back the Termux session notification on Android 13+ devices.
 - `2024-06-14`: Version `0.126` of Termux on Google Play was released. This version fixes `proot` usage.
