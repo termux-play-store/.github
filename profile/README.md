@@ -42,6 +42,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2024-07-15`: Version `1.4` of the `termux-exec` package was released, fixing `system(3)` and `popen(3)` not working, shown as permission denied errors when trying to execute files using certaim programs.
 - `2024-06-27`: Version `2024.06.27` of Termux on Google Play was released, restoring compatibility with a lot of X11 packages and fixing some issues.
 - `2024-06-23`: Version `0.129` of Termux on Google Play was released. This version fixes GPG errors on certain devices, causing incorrect messages about "the repository .. is not signed, as well as KernelSU compatibility and configuring the extra keyboard keys using `termux.properties`.
   - If you are seeing the `the repository .. is not signed` error message from an old installation, either uninstall and install again or run `apt --allow-insecure-repositories update` and `apt upgrade` once.
