@@ -30,7 +30,8 @@ If you as a user want to help out testing or experimenting with the [Termux buil
   - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
 - Not all X11 graphical system packages (`x11-repo`) are yet available.
-- The `Termux:Api`, `Termux:Tasker` and `Termux:Float` apps are not yet available.
+- The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`).
+- The `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
 - External, non-Termux app can not yet run Termux commands (the `RUN_COMMAND` permission).
 - Are you finding something that is worth pointing out here? [Create an issue about it](https://github.com/termux-play-store/termux-issues/issues/new/choose)
@@ -43,6 +44,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 
 ## Updates
 - `2024-07-15`: Version `1.4` of the `termux-exec` package was released, fixing `system(3)` and `popen(3)` not working, shown as permission denied errors when trying to execute files using certaim programs.
+- `2024-07-07`: Version `2024.07.07` of Termux on Google Play was released, fixing issues with `termux-url-opener` and `termux-file-editor`, as well as adding support for certain Termux:API tools which are now built in and work without installing Termux:API (which is not yet available on Google Play): `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`.
 - `2024-06-27`: Version `2024.06.27` of Termux on Google Play was released, restoring compatibility with a lot of X11 packages and fixing some issues.
 - `2024-06-23`: Version `0.129` of Termux on Google Play was released. This version fixes GPG errors on certain devices, causing incorrect messages about "the repository .. is not signed, as well as KernelSU compatibility and configuring the extra keyboard keys using `termux.properties`.
   - If you are seeing the `the repository .. is not signed` error message from an old installation, either uninstall and install again or run `apt --allow-insecure-repositories update` and `apt upgrade` once.
