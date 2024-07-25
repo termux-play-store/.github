@@ -43,6 +43,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2024-07-25`: Problems with `go` packages (such as `golang`, `elvish` and `chezmoi`) was fixed.
 - `2024-07-15`: Version `1.4` of the `termux-exec` package was released, fixing `system(3)` and `popen(3)` not working, shown as permission denied errors when trying to execute files using certaim programs.
 - `2024-07-07`: Version `2024.07.07` of Termux on Google Play was released, fixing issues with `termux-url-opener` and `termux-file-editor`, as well as adding support for certain Termux:API tools which are now built in and work without installing Termux:API (which is not yet available on Google Play): `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`.
 - `2024-06-27`: Version `2024.06.27` of Termux on Google Play was released, restoring compatibility with a lot of X11 packages and fixing some issues.
