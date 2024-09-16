@@ -43,6 +43,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2024-09-16`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `zellij` package.
 - `2024-09-07`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `vtm` package.
 - `2024-08-29`: Version `2024.08.29` of Termux on Google Play was released, adding support for certain Termux:API tools which are now built in and work without installing Termux:API: `termux-audio-info`, `termux-battery-status`,  `termux-dialog`, `termux-keystore`, `termux-toast`.
 - `2024-08-27`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `lua-language-server` package.
