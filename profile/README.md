@@ -29,7 +29,6 @@ If you as a user want to help out testing or experimenting with the [Termux buil
 - Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
   - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
-- Not all X11 graphical system packages (`x11-repo`) are yet available.
 - The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`).
 - The `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
@@ -43,6 +42,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2024-09-17`: [Termux User Repository (TUR)](https://github.com/termux-user-repository/tur) is now available: `pkg install tur-repo` (after updating to latest packages with `pkg up`).
 - `2024-09-16`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `zellij` package.
 - `2024-09-07`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `vtm` package.
 - `2024-08-29`: Version `2024.08.29` of Termux on Google Play was released, adding support for certain Termux:API tools which are now built in and work without installing Termux:API: `termux-audio-info`, `termux-battery-status`,  `termux-dialog`, `termux-keystore`, `termux-toast`.
