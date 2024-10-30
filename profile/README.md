@@ -23,12 +23,13 @@ As the F-Droid build of the Termux app and packages is not yet compatible with t
 This split is a temporary one as things stabilises and details are worked out.
 
 ## Current status for users
-Most users who can install from [F-Droid](https://f-droid.org), should [install Termux from F-Droid](https://f-droid.org/en/packages/com.termux/) for now until the Termux build on Google Play has been stabilised more. Google Play will for now consider the Google Play build to be newer and prompt to update - this will be resolved by a Termux F-Droid update shortly, until then ignore the update prompt and/or disable automatic updates for the Google Play Termux app.
+Most users who can install from [F-Droid](https://f-droid.org), should [install Termux from F-Droid](https://f-droid.org/en/packages/com.termux/) for now until the Termux build on Google Play has been stabilised more.
 
 If you as a user want to help out testing or experimenting with the [Termux build on Google Play](https://play.google.com/store/apps/details?id=com.termux):
 - Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
   - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
 - Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
+- The `Termux:Boot` and `Termux:Widget` apps no longer exists as separate apps in Google Play - their functionality has been merged into the main Termux app.
 - The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`).
 - The `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is currently required, and only 64-bit devices are currently supported.
@@ -42,6 +43,8 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2024-10-30`: Version `2024.10.30` of Termux on Google Play was released, fixing an issue in the latest release where Termux was left running with zero sessions after boot.
+- `2024-10-24`: Version `2024.10.24` of Termux on Google Play was released, merging the `Termux:Boot` and `Termux:Widget` functionality into the main Termux app - separate apps are no longer necessary for running scripts on boot or using widgets.
 - `2024-09-17`: [Termux User Repository (TUR)](https://github.com/termux-user-repository/tur) is now available: `pkg install tur-repo` (after updating to latest packages with `pkg up`).
 - `2024-09-16`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `zellij` package.
 - `2024-09-07`: Usage of `/proc/self/exe` (which does not work under `termux-exec` when targetSdk is bumped) was fixed in the `vtm` package.
