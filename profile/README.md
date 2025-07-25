@@ -8,7 +8,7 @@ Almost every Android version imposes new major restrictions when it comes to sec
 
 The Termux app avoided that by using a `targetSdkVersion` of Android 9, declaring that it was not compatible with the Android 10 requirements. This meant that, due to [Google Play's API level requirements](https://developer.android.com/google/play/requirements/target-sdk), Termux was not able to be updated on Google Play starting in 2020, and new devices were not allowed to install Termux from Google Play.
 
-This was unfortunate, as it meant that a lot of people around the world (many using Termux for real work or educational purposes, not having access to any computers and not being able to install apps from outside of Google Play due to having their phones locked down by carries) could either not install Termux at all on their new devices, or had to use old and insecure app versions on old devices.
+This was unfortunate, as it meant that a lot of people around the world (many using Termux for real work or educational purposes, not having access to any computers and not being able to install apps from outside of Google Play due to having their phones locked down by carriers) could either not install Termux at all on their new devices, or had to use old and insecure app versions on old devices.
 
 Recently, at 2024-06-07, Termux was updated on Google Play with changes to bump the `targetSdkVersion` to latest Android, with:
 - Changes to work with the updated `targetSdkVersion` required by Google Play.
