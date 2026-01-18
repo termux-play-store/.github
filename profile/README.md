@@ -14,9 +14,8 @@ Recently, at 2024-06-07, Termux was updated on Google Play with changes to bump 
 - Changes to work with the updated `targetSdkVersion` required by Google Play.
 - Changes to work without the [sharedUserId](https://developer.android.com/guide/topics/manifest/manifest-element#uid) manifest entry, which was not allowed by the Google Play review.
 - Changes to work with less permissions, as the initial Google Play review did not approve the usage of multiple permissions.
-  - Some of these (but not all) might be possible to add back in the future, if Google Play reviwers can be convinced that they are important enough for app functionality.
 
-As the F-Droid build of the Termux app and packages is not yet compatible with the updated requirements - and before passing Google Play review it wasn't clear exactly which changes was necessary - it was done from a different code base containing changes compared to the F-Droid build:
+As the F-Droid build of the Termux app and packages is not compatible with the updated requirements - the Google Play build is done from a different code base containing changes compared to the F-Droid build:
 - https://github.com/termux is the source code used in the F-Droid build of Termux.
 - https://github.com/termux-play-store is the source code for the Google Play build of Termux.
 
@@ -32,7 +31,7 @@ If you as a user want to help out testing or experimenting with the [Termux buil
 - The `Termux:Boot` and `Termux:Widget` apps no longer exists as separate apps in Google Play - their functionality has been merged into the main Termux app.
 - The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`).
 - The `Termux:Tasker` and `Termux:Float` apps are not yet available.
-- Android version 11 is currently required, and only 64-bit devices are currently supported.
+- Android version 11 is required.
 - External, non-Termux app can not yet run Termux commands (the `RUN_COMMAND` permission).
 - Are you finding something that is worth pointing out here? [Create an issue about it](https://github.com/termux-play-store/termux-issues/issues/new/choose)
 
