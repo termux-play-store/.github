@@ -4,15 +4,15 @@ This page contains information about the [Termux build on Google Play](https://p
 ## Background
 Android apps specify a [targetSdkVersion](https://developer.android.com/guide/topics/manifest/uses-sdk-element#target) property, to indicate which version of Android they are compatible with. This is for backward compatibility, as if the `targetSdkVersion` of an app specifies "Android 11", then the Android system will effectively act as if the system is running that version, allowing old behaviour, even if the system is actually running a newer Android version such as Android 14.
 
-Almost every Android version imposes new major restrictions when it comes to security requirements, and specifically the Android 10 version update was dramatic for Termux usage, as it disallowed executing downloaded files directly.
+Almost every Android version imposes new major restrictions when it comes to security requirements, and specifically Android 10 disallowed executing downloaded files directly.
 
 The Termux app avoided that by using a `targetSdkVersion` of Android 9, declaring that it was not compatible with the Android 10 requirements. This meant that, due to [Google Play's API level requirements](https://developer.android.com/google/play/requirements/target-sdk), Termux was not able to be updated on Google Play starting in 2020, and new devices were not allowed to install Termux from Google Play.
 
 This was unfortunate, as it meant that a lot of people around the world (many using Termux for real work or educational purposes, not having access to any computers and not being able to install apps from outside of Google Play due to having their phones locked down by carries) could either not install Termux at all on their new devices, or had to use old and insecure app versions on old devices.
 
-Recently, at 2024-06-07, Termux was updated on Google Play with changes to bump the `targetSdkVersion` to latest Android, with:
+At 2024-06-07, Termux was updated on Google Play with changes to bump the `targetSdkVersion` to latest Android, with:
 - Changes to work with the updated `targetSdkVersion` required by Google Play.
-- Changes to work without the [sharedUserId](https://developer.android.com/guide/topics/manifest/manifest-element#uid) manifest entry, which was not allowed by the Google Play review.
+- Changes to work without the [sharedUserId](https://developer.android.com/guide/topics/manifest/manifest-element#uid) manifest entry, which is deprecated and did not pass the Google Play review.
 - Changes to work with less permissions, as the initial Google Play review did not approve the usage of multiple permissions.
 
 As the F-Droid build of the Termux app and packages is not compatible with the updated requirements - the Google Play build is done from a different code base containing changes compared to the F-Droid build:
@@ -22,17 +22,12 @@ As the F-Droid build of the Termux app and packages is not compatible with the u
 This split is a temporary one as things stabilises and details are worked out.
 
 ## Current status for users
-Most users who can install from [F-Droid](https://f-droid.org), should [install Termux from F-Droid](https://f-droid.org/en/packages/com.termux/) for now until the Termux build on Google Play has been stabilised more.
-
-If you as a user want to help out testing or experimenting with the [Termux build on Google Play](https://play.google.com/store/apps/details?id=com.termux):
-- Things can be rough - while most normal use cases should work, be ready for some issues and missing functionality.
-  - Check out [Updates](#updates) below for updates, and check out and report issues at https://github.com/termux-play-store/termux-issues/issues
-- Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose) and nowhere else, as the issues encountered can very likely be specific to the Google Play changes.
+Information for users of the [Termux build on Google Play](https://play.google.com/store/apps/details?id=com.termux):
+- Report issues at [termux-play-store/termux-issues](https://github.com/termux-play-store/termux-issues/issues/new/choose), as the issues encountered can very likely be specific to the Google Play changes.
 - The `Termux:Boot` and `Termux:Widget` apps no longer exists as separate apps in Google Play - their functionality has been merged into the main Termux app.
-- The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate` and `termux-volume`).
+- The `Termux:API` app is not yet available (but support for the following tools are now built in: `termux-clipboard-*`, `termux-download`, `termux-saf-*`,  `termux-share`, `termux-storage-get`, `termux-usb`, `termux-vibrate`, `termux-volume`, `termux-camera-info`, `termux-job-scheduler`, `termux-media-player`, `termux-microphone-record`, `termux-notification`, `termux-notification-channel`, `termux-notification-list`, `termux-notification-remove`, `termux-speech-to-text`, `termux-tts-engines` and `termux-tts-speak`.
 - The `Termux:Tasker` and `Termux:Float` apps are not yet available.
 - Android version 11 is required.
-- External, non-Termux app can not yet run Termux commands (the `RUN_COMMAND` permission).
 - Are you finding something that is worth pointing out here? [Create an issue about it](https://github.com/termux-play-store/termux-issues/issues/new/choose)
 
 ## Current status for developers
@@ -42,6 +37,11 @@ If you are a developer wanting to help out with contributing to Termux on Google
 - Create issues or pull requests on the above repositories, or reach out to [#termux-google-play on Matrix](https://matrix.to/#/#termux-google-play:matrix.org) to discuss!
 
 ## Updates
+- `2026-02-11`: Version `2026.02.11` of Termux on Google Play was released, adding support for additional Termux:API tools which are now built in and work without installing Termux:API: `termux-camera-info`, `termux-job-scheduler`, `termux-media-player`, `termux-microphone-record`, `termux-notification`, `termux-notification-channel`, `termux-notification-list`, `termux-notification-remove`, `termux-speech-to-text`, `termux-tts-engines` and `termux-tts-speak`.
+- `2026-02-07`: Fixes to `go` and go-using packages such as `gh`, to make them work better with the `/system/bin/linker` execution mode, was made.
+- `2026-01-07`: Version `2026.01.07` of Termux on Google Play was released, fixing an issue with apt on x86-64.
+- `2025-10-05`: Version `2025.10.05` of Termux on Google Play was released, adding support for [16 kb page sizes](https://developer.android.com/guide/practices/page-sizes).
+- `2025-01-10`: Version `2025.01.18` of Termux on Google Play was released, adding back 32-bit arm support and some smaller fixes.
 - `2024-10-30`: Version `2024.10.30` of Termux on Google Play was released, fixing an issue in the latest release where Termux was left running with zero sessions after boot.
 - `2024-10-24`: Version `2024.10.24` of Termux on Google Play was released, merging the `Termux:Boot` and `Termux:Widget` functionality into the main Termux app - separate apps are no longer necessary for running scripts on boot or using widgets.
 - `2024-09-17`: [Termux User Repository (TUR)](https://github.com/termux-user-repository/tur) is now available: `pkg install tur-repo` (after updating to latest packages with `pkg up`).
