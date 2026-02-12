@@ -39,6 +39,7 @@ If you are a developer wanting to help out with contributing to Termux on Google
 ## Updates
 - `2026-02-11`: Version `2026.02.11` of Termux on Google Play was released, adding support for additional Termux:API tools which are now built in and work without installing Termux:API: `termux-camera-info`, `termux-job-scheduler`, `termux-media-player`, `termux-microphone-record`, `termux-notification`, `termux-notification-channel`, `termux-notification-list`, `termux-notification-remove`, `termux-speech-to-text`, `termux-tts-engines` and `termux-tts-speak`.
 - `2026-02-07`: Fixes to `go` and go-using packages such as `gh`, to make them work better with the `/system/bin/linker` execution mode, was made.
+- `2026-01-13`: A compatibility issue with updated targetSdk was fixed in `libandroid-shmem`. This made packages using shared memory, such as `postgresql`, work.
 - `2026-01-07`: Version `2026.01.07` of Termux on Google Play was released, fixing an issue with apt on x86-64.
 - `2025-10-05`: Version `2025.10.05` of Termux on Google Play was released, adding support for [16 kb page sizes](https://developer.android.com/guide/practices/page-sizes).
 - `2025-01-10`: Version `2025.01.18` of Termux on Google Play was released, adding back 32-bit arm support and some smaller fixes.
